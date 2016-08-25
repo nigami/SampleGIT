@@ -1,0 +1,41 @@
+windows-show view-servers
+package explorer
+
+in servers view --> create new servers via clicking link
+Apache->ur version tomcat 8->
+select project
+
+file new maven project
+next default
+groupID-- anyID
+AtifactId- anyID
+Package Name->
+finish
+
+maven project wll be created 
+
+if POM.xml cdn-- contains all jars to download
+so it ll inject dependencies automatically
+from maven repository
+
+when force update 
+rc/main/java-- all code
+resources-- all key files--all JS,CSS,images,etc
+test--test cases
+pom.xml dependencies will be in maven dependencies
+Webinf- is in src
+index.jsp and web.xml--in src
+
+
+in web.xml
+
+root-context.xml==> application contexgt
+servlet-context.xml--> dispatcher servelt
+welcome-file--index.jsp instead of redirect.jsp
+
+
+in dispatcher-serlvet--> servlet-context:
+xmlns-namespace
+
+
+
