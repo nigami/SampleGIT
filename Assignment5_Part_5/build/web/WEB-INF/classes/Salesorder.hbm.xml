@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 28, 2016 2:26:30 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.neu.edu.hw5p4.pojo.SalesOrder" table="salesorder" catalog="csvdb" optimistic-lock="version">
+        <id name="salesorderid" type="string">
+            <column name="salesorderid" length="80" />
+            <generator class="assigned" />
+        </id>
+        <property name="accountnumber" type="string">
+            <column name="accountnumber" length="80" />
+        </property>
+        <property name="billtoaddressid" type="string">
+            <column name="billtoaddressid" length="80" />
+        </property>
+        <property name="comment" type="string">
+            <column name="comment" length="80" />
+        </property>
+        <property name="creditcardapprovalcode" type="string">
+            <column name="creditcardapprovalcode" length="80" />
+        </property>
+        <property name="creditcardid" type="string">
+            <column name="creditcardid" length="80" />
+        </property>
+        <property name="currencyrateid" type="string">
+            <column name="currencyrateid" length="80" />
+        </property>
+        <property name="customerid" type="string">
+            <column name="customerid" length="80" />
+        </property>
+        <property name="duedate" type="string">
+            <column name="duedate" length="80" />
+        </property>
+        <property name="freight" type="string">
+            <column name="freight" length="80" />
+        </property>
+        <property name="modifieddate" type="string">
+            <column name="modifieddate" length="80" />
+        </property>
+        <property name="onlineorderflag" type="string">
+            <column name="onlineorderflag" length="80" />
+        </property>
+        <property name="orderdate" type="string">
+            <column name="orderdate" length="80" />
+        </property>
+        <property name="purchaseordernumber" type="string">
+            <column name="purchaseordernumber" length="80" />
+        </property>
+        <property name="revisionnumber" type="string">
+            <column name="revisionnumber" length="80" />
+        </property>
+        <property name="salesordernumber" type="string">
+            <column name="salesordernumber" length="80" />
+        </property>
+        <property name="salespersonid" type="string">
+            <column name="salespersonid" length="80" />
+        </property>
+        <property name="shipdate" type="string">
+            <column name="shipdate" length="80" />
+        </property>
+        <property name="shipmethodid" type="string">
+            <column name="shipmethodid" length="80" />
+        </property>
+        <property name="shiptoaddressid" type="string">
+            <column name="shiptoaddressid" length="80" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="80" />
+        </property>
+        <property name="subtotal" type="string">
+            <column name="subtotal" length="80" />
+        </property>
+        <property name="taxamt" type="string">
+            <column name="taxamt" length="80" />
+        </property>
+        <property name="territoryid" type="string">
+            <column name="territoryid" length="80" />
+        </property>
+        <property name="totaldue" type="string">
+            <column name="totaldue" length="80" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,96 @@
+Question 5 / 8 : SQL
+--------------------
+
++----------------------------------------------+   +-------------------------------------------+
+| STUDENTS                                     |   | CLASSES                                   |
++----------------------------------------------+   +-------------------------------------------+
+| STUDENT_ID       INT           NOT NULL (PK) |   | CLASS_ID       INT          NOT NULL (PK) |
+| FIRST_NAME       VARCHAR(40)   NOT NULL      |   | NAME           VARCHAR(20)  NOT NULL      |
+| LAST_NAME        VARCHAR(60)   NOT NULL      |   | DESCRIPTION    VARCHAR(200) NOT NULL      |
+| PHONE_NUM        VARCHAR(20)   NULL          |   +-------------------------------------------+
+| EMAIL_ADDRESS    VARCHAR(100)  NULL          |   
+| GPA              INT           NOT NULL      |   +--------------------------------------+
+| GRADUATION_YEAR  INT           NOT NULL      |   | STUDENTS_CLASSES                     |
++----------------------------------------------+   +--------------------------------------+
+                                                   | STUDENT_ID  INT        NOT NULL (FK) |
+                                                   | CLASS_ID    INT        NOT NULL (FK) |
+                                                   | GRADE       VARCHAR(1) NULL          |
+                                                   +--------------------------------------+
+
+Referring to the data model above, write a SQL statement to retrieve the ID and full name of all students in the class named "Intro to Algorithms".
+
+
+
+
+
+*** If you don't know the answer to a question, simply move on to the next one.
+
+Question 6 / 8 : SQL
+--------------------
+
++----------------------------------------------+   +-------------------------------------------+
+| STUDENTS                                     |   | CLASSES                                   |
++----------------------------------------------+   +-------------------------------------------+
+| STUDENT_ID       INT           NOT NULL (PK) |   | CLASS_ID       INT          NOT NULL (PK) |
+| FIRST_NAME       VARCHAR(40)   NOT NULL      |   | NAME           VARCHAR(20)  NOT NULL      |
+| LAST_NAME        VARCHAR(60)   NOT NULL      |   | DESCRIPTION    VARCHAR(200) NOT NULL      |
+| PHONE_NUM        VARCHAR(20)   NULL          |   +-------------------------------------------+
+| EMAIL_ADDRESS    VARCHAR(100)  NULL          |   
+| GPA              INT           NOT NULL      |   +--------------------------------------+
+| GRADUATION_YEAR  INT           NOT NULL      |   | STUDENTS_CLASSES                     |
++----------------------------------------------+   +--------------------------------------+
+                                                   | STUDENT_ID  INT        NOT NULL (FK) |
+                                                   | CLASS_ID    INT        NOT NULL (FK) |
+                                                   | GRADE       VARCHAR(1) NULL          |
+                                                   +--------------------------------------+
+
+Referring to the data model above, write a single SQL query to retrieve the number of students that received a GPA of 3 or 4. We'd like to see the total number of students that received a GPA of 3 separate from the total number of students that received a GPA of 4.
+
+
+
+*** If you don't know the answer to a question, simply move on to the next one.
+
+Question 7 / 8 : SQL
+--------------------
+
++----------------------------------------------+   +-------------------------------------------+
+| STUDENTS                                     |   | CLASSES                                   |
++----------------------------------------------+   +-------------------------------------------+
+| STUDENT_ID       INT           NOT NULL (PK) |   | CLASS_ID       INT          NOT NULL (PK) |
+| FIRST_NAME       VARCHAR(40)   NOT NULL      |   | NAME           VARCHAR(20)  NOT NULL      |
+| LAST_NAME        VARCHAR(60)   NOT NULL      |   | DESCRIPTION    VARCHAR(200) NOT NULL      |
+| PHONE_NUM        VARCHAR(20)   NULL          |   +-------------------------------------------+
+| EMAIL_ADDRESS    VARCHAR(100)  NULL          |   
+| GPA              INT           NOT NULL      |   +--------------------------------------+
+| GRADUATION_YEAR  INT           NOT NULL      |   | STUDENTS_CLASSES                     |
++----------------------------------------------+   +--------------------------------------+
+                                                   | STUDENT_ID  INT        NOT NULL (FK) |
+                                                   | CLASS_ID    INT        NOT NULL (FK) |
+                                                   | GRADE       VARCHAR(1) NULL          |
+                                                   +--------------------------------------+
+
+Referring to the data model above, write a SQL statement to assign a grade of "A" to every student in the class "Calculus" with a graduating year of 2013.
+
+
+*** If you don't know the answer to a question, simply move on to the next one.
+
+Question 8 / 8 : Data Modeling
+------------------------------
+
++----------------------------------------------+   +-------------------------------------------+
+| STUDENTS                                     |   | CLASSES                                   |
++----------------------------------------------+   +-------------------------------------------+
+| STUDENT_ID       INT           NOT NULL (PK) |   | CLASS_ID       INT          NOT NULL (PK) |
+| FIRST_NAME       VARCHAR(40)   NOT NULL      |   | NAME           VARCHAR(20)  NOT NULL      |
+| LAST_NAME        VARCHAR(60)   NOT NULL      |   | DESCRIPTION    VARCHAR(200) NOT NULL      |
+| PHONE_NUM        VARCHAR(20)   NULL          |   +-------------------------------------------+
+| EMAIL_ADDRESS    VARCHAR(100)  NULL          |   
+| GPA              INT           NOT NULL      |   +--------------------------------------+
+| GRADUATION_YEAR  INT           NOT NULL      |   | STUDENTS_CLASSES                     |
++----------------------------------------------+   +--------------------------------------+
+                                                   | STUDENT_ID  INT        NOT NULL (FK) |
+                                                   | CLASS_ID    INT        NOT NULL (FK) |
+                                                   | GRADE       VARCHAR(1) NULL          |
+                                                   +--------------------------------------+
+
+Referring to the data model above, we'd like to add the concept of a classroom to the schema. Explain what attributes would belong to this new entity, and also how you would relate the new classroom entity to the existing tables.
